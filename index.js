@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = () => ({
   presets: ['react-native'],
   plugins: [
     [
@@ -10,7 +10,8 @@ module.exports = {
       },
     ],
     'transform-decorators-legacy',
-    'transform-exponentiation-operator',
-    'transform-export-extensions',
+    '@babel/plugin-transform-exponentiation-operator',
+    '@babel/plugin-proposal-export-namespace-from',
+    '@babel/plugin-proposal-export-default-from'
   ],
 };
